@@ -2,17 +2,25 @@
   "name": "hello-world-js",
   "version": "1.0.0",
   "description": "Simple Hello World project in JavaScript",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "node index.js"
+    "dev": "node index.js",
+    "electron": "electron .",
+    "electron-dev": "electron . --dev",
+    "build": "electron-builder",
+    "dist": "electron-builder --publish=never"
   },
   "keywords": [
     "hello-world",
     "javascript",
-    "node"
+    "node",
+    "electron",
+    "desktop-app"
   ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^38.1.2"
+  }
 }
-
